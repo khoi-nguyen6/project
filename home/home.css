@@ -1,4 +1,4 @@
-/* Reset and Font */
+/* Global Reset and Font */
 * {
     margin: 0;
     padding: 0;
@@ -6,65 +6,67 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Montserrat', sans-serif;  /* Clean, luxury font */
+    background-color: #f8f9fa;  /* Light and modern background */
     color: #333;
     line-height: 1.6;
 }
 
 /* Navbar */
 .navbar {
-    border-bottom: 1px solid #ddd;
-    padding: 15px 30px;
-    background: #fff;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 20px 30px;
+    background: #ffffff;
 }
 
 .navbar-brand {
-    font-size: 28px;
-    font-weight: bold;
-    color: #222 !important;
+    font-size: 30px;
+    font-weight: 600;
+    color: #2c3e50; /* Darker, luxurious tone */
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .navbar-nav .nav-link {
-    color: #555 !important;
+    color: #7f8c8d !important;
     font-size: 16px;
-    padding: 8px 20px;
+    padding: 10px 18px;
     transition: all 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ff6b6b !important;
-    text-decoration: underline;
+    color: #e74c3c !important;
+    text-decoration: none;
 }
 
 /* Hero Section */
 .hero {
     background: url("../img/background.webp") no-repeat center center/cover;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 0 20px;
+    color: #fff;
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin: 20px 0;
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .hero .btn {
-    background-color: #ff6b6b;
+    background-color: #c0392b;
     color: white;
     padding: 14px 40px;
     font-size: 18px;
@@ -75,20 +77,21 @@ body {
 }
 
 .hero .btn:hover {
-    background-color: #e63e3e;
+    background-color: #e74c3c;
 }
 
-/* Featured Products */
+/* Featured Products Section */
 .featured-products {
-    background-color: #fff;
-    padding: 60px 20px;
+    background-color: #ffffff;
+    padding: 80px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .featured-products h2 {
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 40px;
-    color: #333;
+    color: #2c3e50;
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
@@ -98,79 +101,107 @@ body {
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;  /* Initially hidden for fade-in effect */
 }
 
 .featured-products .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-12px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
 }
 
 .featured-products .card-img-top {
     height: 250px;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.featured-products .card-img-top:hover {
+    transform: scale(1.05);
 }
 
 .featured-products .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-top: 15px;
+}
+
+.featured-products .card-price {
+    font-size: 1.6rem;
+    color: #e74c3c;
+    font-weight: 600;
 }
 
 .featured-products .btn {
-    background-color: #ff6b6b;
+    background-color: #c0392b;
     color: white;
     font-size: 16px;
-    padding: 10px 25px;
-    border-radius: 50px;
+    padding: 12px 30px;
+    border-radius: 30px;
     transition: background-color 0.3s ease;
-}
-
-.featured-products .btn:hover {
-    background-color: #e63e3e;
-}
-
-/* Promotions Section */
-.promotions {
-    background: linear-gradient(to right, #f8f9fa, #ffffff);
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.promotions h2 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    color: #333;
     text-transform: uppercase;
 }
 
-.promotions p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #555;
+.featured-products .btn:hover {
+    background-color: #e74c3c;
 }
 
-.promotions .btn {
-    background-color: #28a745;
-    color: white;
-    font-size: 18px;
-    padding: 12px 40px;
-    border: none;
-    border-radius: 50px;
-    transition: background-color 0.3s ease;
+/* Fade-in Animation */
+.fade-in {
+    opacity: 1 !important;
+    animation: fadeInEffect 1s ease-in-out;
 }
 
-.promotions .btn:hover {
-    background-color: #218838;
+@keyframes fadeInEffect {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Footer */
 footer {
-    background-color: #222;
+    background-color: #2c3e50;
     color: white;
-    padding: 20px 0;
+    padding: 40px 20px;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
 
 footer p {
     margin: 0;
+}
+
+/* Custom Hover Effects for Cards */
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+    color: #2c3e50;
+}
+
+.card-img-top {
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
+/* Additional Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
 }
