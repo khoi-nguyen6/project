@@ -21,3 +21,7 @@ document.getElementById("btnLogin").addEventListener('click', function() {
         alert("Đăng nhập thất bại!")
     }
 });
+document.getElementById('btnLogin').addEventListener('click', function () {
+    // Chuyển hướng sang trang home
+    window.location.href = "../home/home.html";
+});

@@ -2,51 +2,51 @@
 const featuredProducts = [
     {
         id: 1,
-        name: "Sneaker 1",
+        name: "Adidas YOUNG Suede",
         price: 100,
         image: "../img/sneaker1.webp",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description: "Classic suede sneakers with a retro-inspired design for casual and comfortable wear.",
+        details: "Featuring premium suede material and a durable gum sole, the Adidas YOUNG Suede sneakers provide all-day comfort and timeless style. Perfect for any occasion, these sneakers are a must-have for your collection."
     },
     {
         id: 2,
-        name: "Sneaker 2",
+        name: "Nike Dunk Low Safari",
         price: 120,
         image: "../img/sneaker2.webp",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description: "Vibrant animal-inspired design for bold style statements.",
+        details: "The Nike Dunk Low Safari combines vibrant prints and premium construction. With a speckled pattern, comfortable padding, and iconic swoosh logo, these sneakers are perfect for standing out in any crowd."
     },
     {
         id: 3,
-        name: "Sneaker 3",
+        name: "Supreme x Nike Air Force 1",
         price: 140,
         image: "../img/sneaker3.webp",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description: "A stylish collaboration blending iconic Nike and Supreme aesthetics.",
+        details: "Featuring a crisp white leather upper with a bold red swoosh and subtle Supreme branding, this edition of the Nike Air Force 1 redefines streetwear luxury. Durable, comfortable, and fashion-forward, it's ideal for sneaker enthusiasts."
     },
     {
-        id: 4,
-        name: "Sneaker 4",
-        price: 150,
-        image: "../img/sneaker4.webp",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "id": 4,
+        "name": "Air Jordan 1 Low",
+        "price": 150,
+        "image": "../img/sneaker4.webp",
+        "description": "Đôi giày cổ thấp với phối màu trắng, xám và đen, mang lại phong cách thời trang đơn giản và năng động.",
+        "details": "Đôi Air Jordan 1 Low được làm từ chất liệu da cao cấp, với đế giữa bằng cao su, mang lại cảm giác thoải mái và bền bỉ khi mang. Logo Swoosh đen nổi bật trên nền trắng."
     },
     {
-        id: 5,
-        name: "Sneaker 5",
-        price: 170,
-        image: "../img/sneaker5.webp",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "id": 5,
+        "name": "Air Jordan 1 High Retro",
+        "price": 170,
+        "image": "../img/sneaker5.webp",
+        "description": "Đôi giày cổ cao phối màu đen và vàng ánh kim, mang lại vẻ ngoài sang trọng và nổi bật.",
+        "details": "Air Jordan 1 High Retro được thiết kế với phần cổ cao hỗ trợ tốt cho mắt cá chân. Chất liệu da mềm mại và lớp đệm êm ái giúp đôi giày phù hợp cả trong thể thao và thời trang."
     },
     {
-        id: 6,
-        name: "Sneaker 6",
-        price: 180,
-        image: "../img/sneaker6.webp",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "id": 6,
+        "name": "Nike Kobe 9 Elite",
+        "price": 180,
+        "image": "../img/sneaker6.webp",
+        "description": "Đôi giày bóng rổ cổ cao với màu trắng chủ đạo, thiết kế tối ưu cho hiệu suất và sự thoải mái.",
+        "details": "Nike Kobe 9 Elite nổi bật với công nghệ Flyknit mang lại sự ôm chân hoàn hảo, phần đế carbon hỗ trợ tăng độ bền và giảm trọng lượng, phù hợp với các vận động viên bóng rổ."
     }
 ];
 

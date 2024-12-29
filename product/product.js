@@ -40,6 +40,39 @@ if (!productId || isNaN(productId)) {
         // Update page title
         document.title = `${product.name} - Product Detail`;
 
+        // Add to Cart button logic
+        const addToCartButton = document.querySelector(".btn-primary");
+        addToCartButton.addEventListener("click", () => {
+            // Retrieve the cart from localStorage
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // Check if the product already exists in the cart
+            const existingProduct = cart.find(item => item.id === product.id);
+
+            if (existingProduct) {
+                // If product exists, increase quantity
+                existingProduct.quantity += 1;
+            } else {
+                // If product doesn't exist, add it to the cart
+                cart.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    image: product.image,
+                    quantity: 1
+                });
+            }
+
+            // Save the updated cart to localStorage
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            // Notify the user and optionally redirect to the cart page
+            const goToCart = confirm("Product added to cart. Do you want to view your cart?");
+            if (goToCart) {
+                window.location.href = "/cart/cart.html";
+            }
+        });
+
     } else {
         alert("Product not found. Redirecting to homepage.");
         window.location.href = "/"; // Redirect to homepage if product is not found
