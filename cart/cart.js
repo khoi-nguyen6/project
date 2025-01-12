@@ -70,5 +70,7 @@ document.getElementById("checkout-button").addEventListener("click", () => {
     // Here, integrate with payment gateway if needed
 });
 
-// Render cart on page load
-document.addEventListener("DOMContentLoaded", renderCart);
+// Render cart 
+document.addEventListener("DOMContentLoaded", () => {
+    renderCart();
+});
